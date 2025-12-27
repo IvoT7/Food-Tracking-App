@@ -1,0 +1,51 @@
+[
+  {
+    "type": "breakfast",
+    "name": "aw",
+    "calories": 2,
+    "protein": 2,
+    "fat": 2,
+    "carbs": 2,
+    "date": "2025-12-27",
+    "id": "1766843219028"
+  },
+  {
+    "type": "breakfast",
+    "name": "e2",
+    "calories": 2,
+    "protein": 2,
+    "fat": 2,
+    "carbs": 2,
+    "date": "2025-12-27",
+    "id": "1766843318337"
+  },
+  {
+    "type": "breakfast",
+    "name": "wad",
+    "calories": 23,
+    "protein": 23,
+    "fat": 23,
+    "carbs": 23,
+    "date": "2025-12-27",
+    "id": "1766843441013"
+  },
+  {
+    "type": "breakfast",
+    "name": "awd",
+    "calories": 23,
+    "protein": 23,
+    "fat": 23,
+    "carbs": 23,
+    "date": "2025-12-27",
+    "id": "1766844234108"
+  },
+  {
+    "id": 1766844308901,
+    "name": "awd",
+    "calories": 23,
+    "protein": 23,
+    "fat": 23,
+    "carbs": 23,
+    "date": "2025-12-26"
+  }
+]

@@ -1,0 +1,52 @@
+.container {
+    max-width: 550px;
+    margin: 120px auto;
+    padding: 20px;
+    text-align: center;
+}
+  
+.card {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+  
+.login-title {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+}
+  
+.animated-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+  
+.animated-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.links {
+    margin-top: 15px;
+}
+  
+.links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+.links a:hover {
+    text-decoration: underline;
+}
+  

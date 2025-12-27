@@ -1,0 +1,322 @@
+.cc-page-outer {
+  min-height: 100vh;
+  padding: 32px 16px;
+  background: linear-gradient(180deg, #e9fff4 0%, #f5fff9 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  box-sizing: border-box;
+}
+
+.cc-month-wrap {
+  width: 100%;
+  max-width: 980px;
+}
+
+.cc-topbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.cc-back {
+  background: transparent;
+  border: 1px solid rgba(47, 79, 47, 0.12);
+  color: #1f5f37;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cc-title h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #184a2a;
+}
+
+.cc-sub {
+  font-size: 0.85rem;
+  color: rgba(20, 50, 20, 0.6);
+}
+
+.cc-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.cc-nav {
+  background: linear-gradient(90deg, #3cb371, #2e8b57);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.cc-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(46, 139, 87, 0.14);
+}
+
+.cc-month-inner {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 18px 40px rgba(34, 90, 40, 0.06);
+}
+
+.cc-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.cc-weekday {
+  text-align: center;
+  font-weight: 700;
+  color: #2f6b3a;
+}
+
+.cc-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.cc-cell {
+  min-height: 96px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 8px 20px rgba(20, 50, 20, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border: 1px solid rgba(20, 50, 20, 0.04);
+  overflow: hidden;
+}
+.cc-cell:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(20, 80, 30, 0.08);
+}
+
+.cc-today {
+  background: linear-gradient(135deg, #3cb371, #2e8b57);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(46, 139, 87, 0.18);
+}
+
+.cc-daynum {
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+.cc-badge {
+  background: rgba(46, 139, 87, 0.08);
+  color: #1f5f37;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 6px 8px;
+  border-radius: 999px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.cc-empty {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  opacity: 0.4;
+}
+
+.cc-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 8, 6, 0.35);
+  backdrop-filter: blur(6px) saturate(1.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 20px;
+}
+
+.cc-modal {
+  width: 100%;
+  max-width: 720px;
+  background: linear-gradient(180deg, #fff 0%, #fbfff9 100%);
+  border-radius: 16px;
+  box-shadow: 0 22px 60px rgba(20, 50, 20, 0.12);
+  padding: 18px;
+  overflow: hidden;
+}
+
+.cc-modal-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+.cc-modal-date {
+  font-weight: 800;
+  color: #173f25;
+}
+.cc-modal-summary {
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: #274b34;
+}
+
+.cc-modal-close {
+  background: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.cc-modal-close:hover {
+  background: rgba(0, 0, 0, 0.06);
+  transform: scale(1.03);
+}
+
+.cc-modal-body {
+  margin-top: 14px;
+}
+
+.cc-meal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 10px 0;
+}
+.cc-meal-left {
+  min-width: 0;
+}
+.cc-meal-name {
+  font-weight: 700;
+  color: #163e22;
+  word-break: break-word;
+}
+.cc-meal-nut {
+  font-size: 0.9rem;
+  color: #466b52;
+  margin-top: 4px;
+}
+
+.cc-no-meals {
+  color: rgba(10, 10, 10, 0.5);
+  padding: 14px 0;
+}
+
+.cc-trash {
+  background: transparent;
+  border: none;
+  color: #e65b5b;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.cc-trash:hover {
+  transform: scale(1.08);
+  background: rgba(230, 91, 91, 0.08);
+}
+
+.cc-add-form {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.cc-add-form input {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(10, 10, 10, 0.1);
+  font-size: 0.95rem;
+  outline: none;
+  background: #fff;
+}
+.cc-add-form input:focus {
+  border-color: rgba(46, 139, 87, 0.45);
+  box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.12);
+}
+
+.cc-add-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.cc-btn-add {
+  background: linear-gradient(90deg, #3cb371, #2e8b57);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.cc-btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(46, 139, 87, 0.12);
+}
+
+.cc-btn-cancel {
+  background: transparent;
+  border: 1px solid rgba(20, 50, 20, 0.12);
+  color: #2f6b3a;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .cc-add-form {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .cc-grid {
+    gap: 6px;
+  }
+  .cc-cell {
+    min-height: 82px;
+    padding: 8px;
+  }
+  .cc-daynum {
+    font-size: 1rem;
+  }
+  .cc-add-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .cc-add-form {
+    grid-template-columns: 1fr;
+  }
+  .cc-modal {
+    padding: 14px;
+  }
+}
