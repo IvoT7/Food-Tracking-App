@@ -18,19 +18,19 @@ A full-stack food tracking application where users can register/login, add meals
 ## 🖼️ Screenshots
 
 ### 🔐 Login
-![Login](screenshots/login.png)
+![Login](Food%20Tracking%20App/screenshots/login.png)
 
 ### 🔒 Privacy Policy
-![Privacy Policy](screenshots/privacy.png)
+![Privacy Policy](Food%20Tracking%20App/screenshots/privacy.png)
 
 ### 🍽️ Add Meal Page
-![Meal Entry](screenshots/meal-entry.png)
+![Meal Entry](Food%20Tracking%20App/screenshots/meal-entry.png)
 
 ### 🗓️ Calendar + Monthly Nutrition Summary
-![Calendar](screenshots/calendar.png)
+![Calendar](Food%20Tracking%20App/screenshots/calendar.png)
 
 ### 🏠 Home Dashboard (Yesterday’s Meals)
-![Home](screenshots/home.png)
+![Home](Food%20Tracking%20App/screenshots/home.png)
 
 ---
 
