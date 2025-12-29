@@ -18,7 +18,7 @@ A full-stack food tracking application where users can register/login, add meals
 ## 🖼️ Screenshots
 
 ### 🔐 Login
-![Login](screenshots/login.png)
+![Login](login.png)
 
 ### 🔒 Privacy Policy
 ![Privacy Policy](screenshots/privacy.png)
