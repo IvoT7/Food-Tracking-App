@@ -54,13 +54,16 @@ A full-stack food tracking application where users can register/login, add meals
 cd backend
 npm install
 npm start
+```
 
 ---
 
 ## 2) Frontend
+```
 cd frontend
 npm install
 npm start
+```
 
 Frontend: http://localhost:3000
 Backend: http://localhost:5000
