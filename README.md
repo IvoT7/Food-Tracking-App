@@ -18,7 +18,7 @@ A full-stack food tracking application where users can register/login, add meals
 ## 🖼️ Screenshots
 
 ### 🔐 Login
-![Login](Screenshot(79).png)
+![Login](screenshots/login.png)
 
 ### 🔒 Privacy Policy
 ![Privacy Policy](screenshots/privacy.png)
@@ -52,5 +52,32 @@ A full-stack food tracking application where users can register/login, add meals
 ### 1) Backend
 ```bash
 cd backend
+npm install
+npm start
+
+---
+
+## 2) Frontend
+cd frontend
+npm install
+npm start
+
+Frontend: http://localhost:3000
+Backend: http://localhost:5000
+
+---
+
+📁 Project Structure
+Food-Tracking-App/
+  backend/
+  frontend/
+  screenshots/
+  README.md
+
+---
+
+👤 Author
+
+Ivo Sardzoski-Teovski
 npm install
 npm start
