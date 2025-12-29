@@ -70,15 +70,6 @@ Backend: http://localhost:5000
 
 ---
 
-📁 Project Structure
-Food-Tracking-App/
-  backend/
-  frontend/
-  screenshots/
-  README.md
-
----
-
 👤 Author
 
 Ivo Sardzoski-Teovski
